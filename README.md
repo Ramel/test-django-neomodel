@@ -31,3 +31,4 @@ python manage.py install_labels
 python manage.py runserver
 ```
 
+You should be able to go to [here](http://127.0.0.1:8000/neo4j_api/person_list.html)
