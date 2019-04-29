@@ -1,4 +1,4 @@
-test for Django Neomodel:
+test for Django Neomodel issue:
 
 https://github.com/neo4j-contrib/neomodel/issues/444
 
@@ -23,6 +23,10 @@ Install requirements:
 Then:
 
 ```
+export NEO4J_BOLT_URL=bolt://neo4j:password@localhost:7687
+
+cd testDjangoNeomodel
+
 python manage.py install_labels
 python manage.py runserver
 ```
