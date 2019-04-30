@@ -11,9 +11,10 @@ from neomodel import (
 
 class Person(DjangoNode):
 
-    uid = UniqueIdProperty()
+    #uid = UniqueIdProperty()
     name        = StringProperty()
     #handle_id     = StringProperty(index = True)
+    handle_id     = StringProperty()
 
     movies   = RelationshipTo('.movie.Movie', 'ACTED_IN')
 

@@ -11,5 +11,5 @@ urlpatterns = [
     path('movie_list.html', views.movie_list, name='movie_list'),
     path('person_list.html', views.person_list, name='person_list'),
     path('persons.html', views.persons),
-    path('person_edit/<uid>', views.person_update, name='person_edit'),
+    path('person_edit/<handle_id>', views.person_update, name='person_edit'),
 ]

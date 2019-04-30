@@ -51,9 +51,9 @@ class PersonForm(ModelForm):
         fields = ['name']
 
 
-def person_update(request, uid, template_name='neo4j_api/person_form.html'):
+def person_update(request, handle_id, template_name='neo4j_api/person_form.html'):
     #person = get_object_or_404(Person, uid=uid)
-    person = Person.nodes.get_or_none(uid=uid)
+    person = Person.nodes.get_or_none(handle_id=handle_id)
     if person:
         print("person = ", person)
         #name = person.name
